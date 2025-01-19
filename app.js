@@ -33,6 +33,8 @@ document.getElementById("pesquisarCEP").onclick = async () => {
         document.getElementById("estado").value = `Estado: ${data.uf}` || "";
         document.getElementById("box-result").style.animation = "fadeInDown .3s forwards";
         document.getElementById("close-result").style.animation = " scaleIn .3s forwards";
+        document.getElementById("box-result").style.opacity = "1";
+        document.getElementById("box-result").style.transform = "translateY(0)";
 
 
     } catch (error) {
