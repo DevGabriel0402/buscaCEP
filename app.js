@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("box-result").style.opacity = "0";
     setTimeout(() => {
         document.getElementById("box-result").style.display = "flex";
+        document.getElementById("box-result").style.opacity = "0";
     }, 500)
 })
 
