@@ -171,7 +171,7 @@ header {
 .box-result .result {
     list-style: none;
     padding-left: 10px;
-    background: transparent;
+    background: var(--white);
     border: none;
 }
 
