@@ -24,9 +24,9 @@ body {
 .container {
     width: 100%;
     max-width: 600px;
+    min-height: 94dvh;
     display: flex;
     flex-direction: column;
-    min-height: calc(100dvh - 40px);
 }
 
 header {
@@ -156,15 +156,15 @@ header {
     margin-inline: 10px;
     padding-bottom: 10px;
     position: relative;
-    display: none;
+    display: flex;
     flex-direction: column;
     background-color: var(--white);
     gap: 5px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     transform: translateY(-20px);
-    opacity: 1;
     z-index: 100;
+    opacity: 0;
 
 }
 
@@ -228,6 +228,10 @@ footer span {
 
 @keyframes fadeInDown {
     0% {
+        display: flex !important;
+    }
+
+    5% {
         opacity: 0;
         transform: translateY(-20px);
     }
@@ -244,9 +248,15 @@ footer span {
         transform: translateY(0);
     }
 
+    95% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
     100% {
         opacity: 0;
         transform: translateY(-20px);
+        display: none;
     }
 }
 
@@ -268,7 +278,7 @@ footer span {
 
     100% {
         transform: scale(0);
-
+        display: none;
     }
 }
 

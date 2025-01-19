@@ -1,9 +1,4 @@
-window.addEventListener("DOMContentLoaded", () => {
-    setTimeout(() => {
-        document.getElementById("box-result").style.display = "flex";
-        document.getElementById("box-result").style.opacity = "0";
-    }, 500)
-})
+
 
 
 const limparDados = () => {
