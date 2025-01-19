@@ -1,8 +1,8 @@
 window.addEventListener("DOMContentLoaded", () => {
     document.getElementById("box-result").style.opacity = "0";
-    document.getElementById("close-result").style.animation = " scaleDown .3s forwards";
-
-
+    setTimeout(() => {
+        document.getElementById("box-result").style.display = "flex";
+    }, 500)
 })
 
 
