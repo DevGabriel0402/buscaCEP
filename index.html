@@ -9,6 +9,8 @@
         type="image/x-icon">
     <link rel="apple-touch-icon" href="https://i.pinimg.com/736x/12/e1/ee/12e1ee5bfbfc853034ee2e349400c5cd.jpg">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-box-invalid.css">
+    <link rel="stylesheet" href="style-box-null.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="app.js" defer></script>
     <title>BuscaCEP Fácil</title>
@@ -31,15 +33,35 @@
                 </label>
             </div>
         </header>
+
+        <!-- Box Com Resultado Correto -->
         <div class="box-result" id="box-result">
             <input class="result" id="cep">
             <input class="result" id="rua">
             <input class="result" id="bairro">
             <input class="result" id="cidade">
             <input class="result" id="estado">
+            <input class="result" id="regiao">
+            <input class="result" id="ibge">
+            <input class="result" id="ddd">
             <div onclick="limparDados()" id="close-result"><i class='bx bx-trash'></i></div>
         </div>
 
+        <!-- Box CEP Invalido -->
+
+        <div class="box-invalid" id="box-result-invalid">
+            <input class="result-invalid" id="cep-invalid" placeholder="CEP - 0010001">
+            <input class="result-invalid" id="info-invalid" placeholder="O CEP informado é invalido.">
+            <div onclick="limparDadosInvalidos()" id="close-result-invalid"><i>x</i></div>
+        </div>
+
+        <!-- Box CEP não existe -->
+        <div class="box-null" id="box-result-null">
+            <input class="result-null" id="cep-null" placeholder="CEP - 0010001">
+            <input class="result-null" id="info-invalid" placeholder="O CEP informado não existe.">
+            <div onclick="limparDadosNull()" id="close-result-null"><i class='bx bxs-alarm-exclamation'></i>
+            </div>
+        </div>
 
     </div>
     <footer>Desenvolvido por <span id="btn-footer"> Gabriel</span></footer>
