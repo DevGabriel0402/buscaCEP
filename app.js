@@ -28,7 +28,7 @@ const limparDadosNull = () => {
     document.getElementById("close-result-null").style.animation = " scaleDown .3s forwards";
 };
 
-document.getElementById("pesquisarCEP").onclick = async () => {
+const pesquisarCEP = async () => {
     const cep = document.getElementById("inputCEP").value.trim();
 
     if (!/^\d{8}$/.test(cep)) {
@@ -87,4 +87,11 @@ document.getElementById("pesquisarCEP").onclick = async () => {
         document.getElementById("inputCEP").value = "";
 
     }
-};
+}
+
+// Evento para quando eu apertar o enter ele fazer a mesma funcao de click no botao de pesquisarCEP
+document.getElementById("inputCEP").addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        document.getElementById("pesquisarCEP").click()
+    }
+})
