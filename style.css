@@ -173,6 +173,8 @@ header {
     padding-left: 10px;
     background: var(--white);
     border: none;
+    outline: none;
+    pointer-events: none;
 }
 
 .box-result .result:nth-child(1) {
