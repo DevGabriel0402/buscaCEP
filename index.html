@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="rgb(43, 101, 226)">
+    <link rel="shortcut icon" href="https://i.pinimg.com/736x/12/e1/ee/12e1ee5bfbfc853034ee2e349400c5cd.jpg"
+        type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://i.pinimg.com/736x/12/e1/ee/12e1ee5bfbfc853034ee2e349400c5cd.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="app.js" defer></script>
+    <title>BuscaCEP Fácil</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">BuscaCEP <span>Fácil</span></h1>
+            <p class="description">Perfeito para quem precisa de <span>respostas rápidas!</span> Encontre qualquer CEP
+                ou
+                endereço em
+                poucos cliques e otimize seu dia a dia.</p>
+
+            <div class="container-input">
+                <input type="number" id="inputCEP" placeholder="Informe o CEP...">
+                <label for="inputCEP"><i class='bx bxs-map icon-pin'></i></label>
+                <label class="btn-buscar" id="pesquisarCEP"><i class='bx bx-search icon'></i>
+                    <p class="text">Buscar</p>
+                </label>
+            </div>
+        </header>
+        <div class="box-result" id="box-result">
+            <input class="result" id="cep" disabled>
+            <input class="result" id="rua" disabled>
+            <input class="result" id="bairro" disabled>
+            <input class="result" id="cidade" disabled>
+            <input class="result" id="estado" disabled>
+            <div onclick="limparDados()" id="close-result"><i class='bx bx-trash'></i></div>
+        </div>
+
+
+    </div>
+    <footer>Desenvolvido por <span id="btn-footer"> Gabriel</span></footer>
+</body>
+
+</html>
